@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; 
+    height: 350px; 
+}
+
+header h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+nav {
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav .menu {
+    display: flex;
+    gap: 15px;
+}
+
+nav .menu a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav .menu a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.contact-content {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.contact-content h3 {
+    font-size: 1.8rem;
+    color: #1DB954;
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    
+    nav .menu {
+        gap: 10px;
+    }
+
+    nav .menu a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contact-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    
+    nav .menu {
+        gap: 5px;
+    }
+
+    nav .menu a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-content p {
+        font-size: 0.9rem;
+    }
+}
